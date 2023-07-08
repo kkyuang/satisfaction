@@ -1,3 +1,5 @@
+#네이버 검색량 API를 사용하여 memelist에 있는 meme 키워드의 검색량을 가져옴
+
 import pandas as pd
 import urllib.request
 import json
@@ -84,5 +86,8 @@ def getData(n, m):
     workbook.save('memeNaver.xlsx')
 
 
-for i in range(0, 61):
-    getData(i, i+1)
+#반복문을 활용하여 61번 밈까지의 데이터를 모두 저장
+#for i in range(0, 61):
+#    getData(i, i+1)
+
+getData(47, 48)
